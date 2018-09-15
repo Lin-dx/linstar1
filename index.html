@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<noscript>
+		<h1>Not suppost JS</h1>
+	</noscript>
+	<title>LinStar</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="blur">
+		<header class="sit-header" role="banner">
+ 			<nav class="site-navigation top-bar show-for-medium" role="nevigation">
+ 				<div class="top-bar-left">
+ 					<div class="site-desktop-title top-bar-title">
+ 						<h1 class="site-name">
+ 						<span class="go-to-home">LinStar</span>
+ 						</h1>	
+ 					</div>
+ 				</div>
+ 			</nav>	
+ 		</header>
+		<section class="container">
+			<section class="colors-hex-container">
+				<section id="colors-hex" class="front-hex transition">
+ 					<div class="show-for-medium">
+ 						<a id="slideLeft" class="nav-left">My life</a>
+ 						<a id="slideRight" class="nav-right">My art</a>
+ 						<a id="slideTop" class="nav-top" target="-blank">My Way</a>
+ 						<a id="slideDown" class= "nav-bottom" >My Sight</a>
+ 					</div>
+ 						<video autoplay preload="auto" playsinline src="img/v3.mp4"></video>
+				</section>
+			</section>
+		</section>
+		<div class="footer=container" data-sticky-footer="">
+ 	 	</div> 	 	
+	</div>
+</body>
+
+<script type="text/javascript">
+	var element=document.getElementById(
+		"slideLeft")
+	element.addEventListener("click",function(){
+		alert("left side")
+	})
+	var element=document.getElementById(
+		"slideRight")
+	element.addEventListener("click",function(){
+		alert("right side")
+	})
+	var element=document.getElementById(
+		"slideTop")
+	element.addEventListener("click",function(){
+		alert("top side")
+	})
+	var element=document.getElementById(
+		"slideDown")
+	element.addEventListener("click",function(){
+		alert("Bottom side")
+	})
+</script>
+</html>
