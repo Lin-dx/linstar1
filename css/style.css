@@ -70,12 +70,12 @@ div.top-bar-left{
 }
 
 .top-bar-title{
-flex: 0 0 auto;
-	
+flex: 0 0 auto;	
 }
+
 @media screen and(max-width: 39.937em){
-.hide-for-medium{
-	display: none;
+.show-for-medium{
+	display: none!important;
 }
 }
 h1.site-name{
@@ -163,8 +163,63 @@ video{
 	max-width: 105%;
 	transform: translateY(-6px) translateX(-2.1%);
 }
+
 .go-to-home,a{
  cursor: pointer;
  pointer-events: auto;
 }
 
+@media screen and (min-width:64em){
+	.footer-container{
+	pointer-events: none;
+	position: absolute;
+}
+}
+
+.footer-container{
+	width: 100%;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.desktop-footer{
+	padding: 20px;
+	position: relative;
+}
+
+.grid-x{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+a:-webkit-any-link{
+	color: -webkit-link;
+	text-decoration: underline;
+}
+
+.grid-x>.small-6{
+	width: 50%;
+}
+
+.share-link{
+	bottom: 1.25rem;
+	margin: 0;
+	font-variant: .875rem!important;
+	font-weight:400;
+	letter-spacing: .1875rem;
+	min-width: 117px;
+	padding: .625rem .3125rem;
+	position: absolute;
+}
+
+ul.social-list{
+	list-style-type: none;
+	margin: 0;
+	width: auto;
+}
+
+.has-tip{
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+}
